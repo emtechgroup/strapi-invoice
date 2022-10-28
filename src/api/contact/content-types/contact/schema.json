@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "First_name": {
+      "type": "string"
+    },
+    "Last_name": {
+      "type": "string"
+    },
+    "Phone_number": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Job": {
+      "type": "string"
+    },
+    "Client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}
